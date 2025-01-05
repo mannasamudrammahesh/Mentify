@@ -228,7 +228,7 @@ If you encounter any issues or have feedback, please open an issue on our [GitHu
   
 ## Authors
 
-- [@kanugurajesh](https://github.com/kanugurajesh)
+- [@MuniMahesh](https://github.com/mannasamudrammahesh)
 
 ## Support
 
