@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'MetaMind',
   description: 'MetaMind is a platform for mental health awareness and support.',
   icons: {
-    icon: '/favicon.ico',
+    icon: 'http://localhost:3000/favicon.ico',
   },
 }
 
