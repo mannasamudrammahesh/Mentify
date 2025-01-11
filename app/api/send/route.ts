@@ -2,23 +2,21 @@ import { EmailTemplate } from "@/components/email-template";
 import { NextRequest } from "next/server";
 import { Resend } from "resend";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = new Resend("re_9nSrzkiw_LjaXVAXvcu74HuJGKW7cwN2Y");  // API key included
 
 export async function POST(request: NextRequest) {
   const reqBody = await request.json();
   const { imageURl, email } = reqBody;
 
   try {
-    // @ts-ignore
     const data = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: email as string,
+      to: email,
       subject: "Your avatar is ready! 🌟🤩",
-      react: EmailTemplate({ imageURl: imageURl }),
+      react: EmailTemplate({ imageURl }),
     });
-
-    return Response.json(data);
+    return NextResponse.json(data);
   } catch (error) {
-    return Response.json({ error });
+    return NextResponse.json({ error });
   }
 }
