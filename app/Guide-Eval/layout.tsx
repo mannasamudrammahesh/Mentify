@@ -44,7 +44,7 @@ export default function HomeLayout({
                                 <Link href="/Therapy" className={`${styles.a}`}>Therapist</Link>
                             </li>
                             <li>
-                                <Link href="https://kanugurajesh-document-qa-app-8ft9g0.streamlit.app/" className={`${styles.a}`}>Health-Q/A</Link>
+                                <Link href="https://munimahesh.streamlit.app/" className={`${styles.a}`}>Health-Q/A</Link>
                             </li>
                             <li>
                                 <Link href="/ImageRekog" className={`${styles.a}`}>Rekog</Link>
